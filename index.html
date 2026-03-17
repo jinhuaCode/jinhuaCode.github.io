@@ -21,7 +21,7 @@
       <li><a href="#portfolio">作品集</a></li>
       <li><a href="#contact">联系</a></li>
     </ul>
-    <button id="theme-toggle" aria-label="切换主题">🌙 深色</button>
+    <button id="theme-toggle" aria-label="切换深色模式">深色模式</button>
   </nav>
 </header>
 
@@ -29,6 +29,9 @@
   <!-- 个人信息 -->
   <section id="intro">
     <h1>杜锦华 Dujinhua</h1>
+          <div class="card">
+      <img src="assets/images/profile.jpg" alt="证件照">
+
     <p>Email: <a href="mailto:1217239921@qq.com">1217239921@qq.com</a> | GitHub: <a href="https://github.com/jinhuaCode" target="_blank">jinhuaCode</a> | Mobile: 173-022-33511</p>
   </section>
 
@@ -46,15 +49,15 @@
     <h2>技能</h2>
     <div class="skill">
       <label>AI产品能力</label>
-      <div class="bar"><div class="fill" style="width: 95%"></div></div>
+      <div class="bar"><div class="fill" style="--fill-width:95%"></div></div>
     </div>
     <div class="skill">
       <label>产品与项目管理</label>
-      <div class="bar"><div class="fill" style="width: 90%"></div></div>
+      <div class="bar"><div class="fill" style="--fill-width:90%"></div></div>
     </div>
     <div class="skill">
       <label>技术理解能力</label>
-      <div class="bar"><div class="fill" style="width: 85%"></div></div>
+      <div class="bar"><div class="fill" style="--fill-width:85%"></div></div>
     </div>
   </section>
 
@@ -98,15 +101,45 @@
     </ul>
   </section>
 
+  <!-- 证书与获奖 -->
+  <section id="awards">
+    <h2>证书与获奖</h2>
+    <div class="card">
+      <h3>证书</h3>
+      <ul>
+        <li>信息系统项目管理师（软考高级职称资格证书）</li>
+        <li>计算机四级网络工程师</li>
+        <li>计算机三级网络技术</li>
+        <li>英语 CET-6</li>
+        <li>驾驶证</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>获奖情况</h3>
+      <ul>
+        <li>研究生国家奖学金</li>
+        <li>本科国家励志奖学金</li>
+        <li>本科优秀毕业生</li>
+        <li>2025 上海华瑞银行人工智能大赛三等奖</li>
+        <li>NNIT 亚太区企业内部 AI 竞赛特别贡献奖</li>
+        <li>2020、2021、2022 本科二等奖学金</li>
+        <li>2023、2024 研究生三等奖学金</li>
+        <li>天津中医药大学三好学生</li>
+        <li>全国物理实验竞赛优秀奖</li>
+        <li>中国国际大学生创新大赛 2024 天津赛区产业赛道铜奖</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- 作品集 -->
   <section id="portfolio">
     <h2>作品集</h2>
     <div class="grid">
       <div class="card">
-        <img class="portfolio-image" src="https://via.placeholder.com/600x360.png?text=%E6%B8%9A%E6%B5%B7%E8%AF%81%E5%88%B8%E6%99%BA%E8%83%BD%E6%8A%95%E7%A0%94" alt="渤海证券智能投研 Agent 截图" />
+      <img src="assets/images/project1.png" alt="渤海证券智能投研 Agent">
+
         <div class="portfolio-card-details">
           <h3>渤海证券智能投研 Agent</h3>
-          <p>基于多模块 LLM 管线，提供基础面、财报与情绪分析，生成标准化 JSON 报告。</p>
           <a href="https://modao.cc/proto/RtWqNWfvsoxoticJnj3jh/sharing?view_mode=read_only&screen=rbpUXlG24ZkX0itFS" target="_blank">查看项目</a>
         </div>
       </div>
@@ -114,7 +147,6 @@
         <img class="portfolio-image" src="https://via.placeholder.com/600x360.png?text=NNIT+OpenWebUI" alt="NNIT OpenWebUI 项目截图" />
         <div class="portfolio-card-details">
           <h3>NNIT OpenWebUI 项目二次开发</h3>
-          <p>基于 OpenWebUI 定制交互界面与数据流程，集成企业级模型部署与便捷插件扩展。</p>
           <a href="https://github.com/jinhuaCode/open-webui" target="_blank">GitHub</a>
         </div>
       </div>
@@ -122,7 +154,6 @@
         <img class="portfolio-image" src="https://via.placeholder.com/600x360.png?text=%E4%BC%81%E4%B8%9A%E8%82%A1%E6%9D%83%E7%A9%BF%E9%80%8F" alt="企业股权穿透工具截图" />
         <div class="portfolio-card-details">
           <h3>企业股权穿透工具</h3>
-          <p>多维度可视化股权结构，支持递归关系分析、持股比例与关联方风险排查。</p>
           <a href="https://github.com/jinhuaCode/equity_penetration.git" target="_blank">GitHub</a>
         </div>
       </div>
@@ -130,7 +161,6 @@
         <img class="portfolio-image" src="https://via.placeholder.com/600x360.png?text=%E5%AD%A6%E7%94%9F%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F" alt="学生可视化大屏开发截图" />
         <div class="portfolio-card-details">
           <h3>学生可视化大屏开发</h3>
-          <p>面向学校管理与教学分析的可视化大屏，支持多种统计维度与动画交互展示。</p>
           <a href="https://github.com/jinhuaCode/student_Large_screen" target="_blank">GitHub</a>
         </div>
       </div>
@@ -150,28 +180,20 @@
 </footer>
 
 <script>
-  const toggle = document.getElementById('theme-toggle');
-  const body = document.body;
-  const savedTheme = localStorage.getItem('theme');
+  const themeToggle = document.getElementById('theme-toggle');
+  const root = document.body;
+  const savedTheme = localStorage.getItem('site-theme');
 
-  const setTheme = (mode) => {
-    if (mode === 'dark') {
-      body.classList.add('dark-mode');
-      toggle.textContent = '☀️ 浅色';
-    } else {
-      body.classList.remove('dark-mode');
-      toggle.textContent = '🌙 深色';
-    }
-    localStorage.setItem('theme', mode);
-  };
-
-  toggle.addEventListener('click', () => {
-    setTheme(body.classList.contains('dark-mode') ? 'light' : 'dark');
-  });
-
-  if (savedTheme) {
-    setTheme(savedTheme);
+  if (savedTheme === 'dark') {
+    root.classList.add('dark');
+    themeToggle.textContent = '浅色模式';
   }
+
+  themeToggle.addEventListener('click', () => {
+    const isDark = root.classList.toggle('dark');
+    themeToggle.textContent = isDark ? '浅色模式' : '深色模式';
+    localStorage.setItem('site-theme', isDark ? 'dark' : 'light');
+  });
 </script>
 
 </body>
