@@ -1,2 +1,0 @@
-# jinhuaCode.github.io
-self
