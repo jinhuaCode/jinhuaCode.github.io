@@ -35,3 +35,12 @@ a:hover {text-decoration:underline;}
 .portfolio-card-details h3 {margin-bottom:0.45rem; font-size:1.09rem;}
 .portfolio-card-details a {display:inline-block; padding:0.35rem 0.65rem; background:var(--button); color:#fff; border-radius:7px; text-decoration:none; font-size:0.9rem; transition:background 0.2s ease;}
 .portfolio-card-details a:hover {background:var(--button-hover);}
+.tags span {
+  display:inline-block;
+  background:#eaf2ff;
+  color:#0366d6;
+  padding:6px 10px;
+  margin:5px;
+  border-radius:6px;
+  font-size:14px;
+}
