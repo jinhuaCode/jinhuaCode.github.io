@@ -33,6 +33,13 @@ a:hover {text-decoration:underline;}
 #portfolio .grid .card img,
 #portfolio .card img,
 #projects .grid .card img {width:100%; max-height:160px; object-fit:cover; border-radius:10px; margin-bottom:0.6rem; border:1px solid var(--primary-soft);}
+.award-marquee-card {overflow:hidden;}
+.award-marquee {overflow:hidden; width:100%; position:relative;}
+.award-items {display:flex; gap:1.6rem; padding:0.8rem 0; margin:0; animation:marquee-left 24s linear infinite; list-style:none;}
+.award-items li {display:inline-flex; white-space:nowrap; align-items:center; font-size:0.95rem; color:var(--text);}
+.award-items li:not(:last-child)::after {content: ' ·'; margin-left:0.7rem; color:var(--primary);}
+.award-marquee:hover .award-items {animation-play-state:paused;}
+@keyframes marquee-left {from {transform:translateX(0);} to {transform:translateX(-50%);}}
 @media (max-width:768px) {header nav {justify-content:center;} header nav ul {gap:0.6rem;} #intro h1 {font-size:1.65rem;} }
 .portfolio-image {width:100%; max-height:170px; object-fit:cover; border-radius:10px; margin-bottom:0.6rem; border:1px solid var(--primary-soft);}
 .portfolio-card-details {display:flex; flex-direction:column; gap:0.35rem;}
